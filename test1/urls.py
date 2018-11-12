@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+#要先导入自己的视图
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+    # 导入自己的
+    url(r'^',include('booktest.urls'))
 ]

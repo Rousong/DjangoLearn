@@ -16,3 +16,7 @@ class HeroInfo(models.Model):
         return self.hname
 
 
+'''
+shell 裡面的一些方法:
+
+'''
