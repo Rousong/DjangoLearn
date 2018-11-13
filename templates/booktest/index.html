@@ -7,7 +7,7 @@
 <body>
 <ul>
 {% for foo in list %}
- <li>{{ foo.btitle }}</li>
+    <li><a href="{{ foo.id }}" >{{ foo.btitle }}</a></li>
 {% endfor %}
 </ul>
 

@@ -1,5 +1,15 @@
 from django.db import models
 
+'''
+模型Model 负责与数据库交互
+完全面向对象:操作模型对象  列表
+
+定义模型类:指定属性及类型,以确定表的结构.迁移
+
+后台管理:创建管理员,启动服务器, admin, 注册admin.py
+         
+'''
+
 class BookInfo(models.Model):
     btitle = models.CharField(max_length=20)
     bpub_date = models.DateField()
